@@ -15,6 +15,10 @@ Meteor.methods({
       sharedWith: [],
       ownerId: this.userId
     });
+  },
+  'bins.remove':function(binToRemove){
+    // just removing a record, not destryoing it
+    return Bins.remove(binToRemove);
   }
 });
 
