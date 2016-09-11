@@ -11,7 +11,7 @@ class BinsList extends Component{
       return(
         <li className="list-group-item" key={b._id}>
           Bin {b._id}
-          <span className="pullright">
+          <span className="pull-right">
             <button className="btn btn-danger"
               onClick={() => this.onBinRemove(b)}>
             Remove
