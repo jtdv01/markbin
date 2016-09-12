@@ -19,6 +19,9 @@ Meteor.methods({
   'bins.remove':function(binToRemove){
     // just removing a record, not destryoing it
     return Bins.remove(binToRemove);
+  },
+  'bins.update':function(bin,newContent){
+    return Bins.update(bin._id,{$set:{content: newContent}});
   }
 });
 

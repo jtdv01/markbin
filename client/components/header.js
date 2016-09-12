@@ -10,7 +10,7 @@ class Header extends Component {
     // Callback only after the bin is made
     Meteor.call('bins.insert',(error,returnedBinId) =>{
       // Navigate directly to the newly created binId
-      browserHistory.push(`bin/${returnedBinId}`);
+      browserHistory.push(`bins/${returnedBinId}`);
     });
   }
 
