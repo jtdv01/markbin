@@ -44,5 +44,8 @@ class BinsList extends Component{
 export default createContainer(() => {
   // Will only subscribe to those owned by user
   Meteor.subscribe('bins');
+  // Also subscribing to bins that have been shared to
+  // now in the Bins. collection too
+  Meteor.subscribe('sharedBins');
   return {bins:Bins.find({}).fetch()};
 }, BinsList)
