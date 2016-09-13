@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "codemirror": "^5.18.2",
+    "markdown": "^0.5.0",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.3.1",
     "react-addons-pure-render-mixin": "^15.3.1",

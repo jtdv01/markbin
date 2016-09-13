@@ -13,7 +13,7 @@ class BinsEditor extends Component{
 
   render(){
     return(
-      <div className="cox-xs-8">
+      <div className="col-xs-6">
       <h3>Now editing {this.props.bin._id}</h3>
       <CodeMirror
         value={this.props.bin.content}
